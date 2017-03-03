@@ -56,7 +56,7 @@
     "adSubnetName": "adSubnet",
     "adSubnetAddressPrefix": "10.0.0.0/24",
     "publicIPAddressName": "adPublicIP",
-    "adNicname":"adInternalNIC"
+    "adNicName": "adInternalNIC"
   },
   "resources": [
     {
