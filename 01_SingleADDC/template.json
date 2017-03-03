@@ -106,6 +106,9 @@
       "name": "[variables('adNicName')]",
       "apiVersion": "2016-03-30",
       "location": "[resourceGroup().location]",
+      "dependsOn": [
+             "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]"
+     ],
       "properties": {
         "ipConfigurations": [
           {
