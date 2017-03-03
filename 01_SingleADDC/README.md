@@ -4,3 +4,5 @@
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fkrjhitch%2FARMandDSCDeploy%2Fmaster%2F01_SingleADDC%2Ftemplate.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
+
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
