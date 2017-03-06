@@ -118,6 +118,9 @@
               "privateIPAddress": "[variables('adNicIPAddress')]",
               "subnet": {
                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('adSubnetName'))]"
+              },
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', [variables('adNicName')])]"
               }
             }
           }
