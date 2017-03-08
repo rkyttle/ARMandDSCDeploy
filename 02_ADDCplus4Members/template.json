@@ -28,7 +28,6 @@
       },
       "defaultValue": "2012-R2-Datacenter",
       "allowedValues": [
-        "2012-Datacenter",
         "2012-R2-Datacenter",
         "2016-Datacenter"
       ]
@@ -68,8 +67,8 @@
     "member2NicIPAddress": "10.0.0.6",
     "member3NicIPAddress": "10.0.0.7",
     "member1PublicIPName": "member1PublicIP",
-    "member2PublicIPName": "member1PublicIP",
-    "member3PublicIPName": "member1PublicIP"
+    "member2PublicIPName": "member2PublicIP",
+    "member3PublicIPName": "member3PublicIP"
   },
   "resources": [
     {
