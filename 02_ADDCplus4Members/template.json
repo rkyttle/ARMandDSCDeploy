@@ -513,7 +513,7 @@
       "location": "[resourceGroup().location]",
       "dependsOn": [
         "[concat('Microsoft.Compute/virtualMachines/', variables('member1VMName'))]",
-        "[resourceId('Microsoft.Compute/virtualMachines/extensions', adVM//CreateADForest)]"
+        "[resourceId('Microsoft.Compute/virtualMachines/extensions', 'adVM/CreateADForest')]"
       ],
       "properties": {
         "publisher": "Microsoft.Compute",
