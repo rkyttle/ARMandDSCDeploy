@@ -68,7 +68,8 @@
     "member3NicIPAddress": "10.0.0.7",
     "member1PublicIPName": "member1PublicIP",
     "member2PublicIPName": "member2PublicIP",
-    "member3PublicIPName": "member3PublicIP"
+    "member3PublicIPName": "member3PublicIP",
+    "OUPath": "Computers"
   },
   "resources": [
     {
@@ -513,7 +514,7 @@
       "location": "[resourceGroup().location]",
       "dependsOn": [
         "[concat('Microsoft.Compute/virtualMachines/', variables('member1VMName'))]",
-        "[resourceId('Microsoft.Compute/virtualMachines/extensions/', 'adVM', 'CreateADForest')]"
+        "[resourceId('Microsoft.Compute/virtualMachines/extensions/', variables('adVMName'), 'CreateADForest')]"
       ],
       "properties": {
         "publisher": "Microsoft.Compute",
@@ -523,6 +524,7 @@
         "settings": {
           "Name": "[parameters('domainName')]",
           "User": "[concat(parameters('domainName'), '\\', parameters('adminUsername'))]",
+          "OUPath": "[variables('OUPath')]",
           "Restart": "true",
           "Options": "3"
         },
