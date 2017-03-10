@@ -523,7 +523,7 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "Name": "[parameters('domainName')]",
-          "User": "[concat(parameters('domainName'), '\\', parameters('adminUsername'))]",
+          "User": "[concat('domain', '\\', parameters('adminUsername'))]",
           "OUPath": "[variables('OUPath')]",
           "Restart": "true",
           "Options": "3"
