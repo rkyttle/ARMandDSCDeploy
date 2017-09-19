@@ -38,7 +38,7 @@
       "metadata": {
         "description": "The location of resources, such as templates and DSC modules, that the template depends on"
       },
-      "defaultValue": "https://raw.githubusercontent.com/krjhitch/ARMandDSCDeploy/master/01_SingleADDC"
+      "defaultValue": "https://raw.githubusercontent.com/rkyttle/ARMandDSCDeploy/master/01_SingleADDC"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
